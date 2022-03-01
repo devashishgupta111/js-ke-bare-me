@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class emp {
+        constructor(name, exper, division) {
+          this.givename = name;
+          this.giveexper = exper;
+          this.givedivision = division;
+        }
+        slogan() {
+          return `i am ${this.givename}and this compa best`;
+        }
+        static add(a, b) {
+          return a + b;
+        }
+      }
+      class prgram extends emp {
+        constructor(name, exper, division, language) {
+          super(name, exper, division);
+          this.lan = language;
+        }
+        static multiple(a, b) {
+          return a * b;
+        }
+      }
+
+      harry = new emp("dev", 3, "divisiiio");
+      //console.log(harry.slogan());
+      //console.log(emp.add(3, 2));
+      console.log(prgram.multiple(2, 2));
+    </script>
+  </body>
+</html>

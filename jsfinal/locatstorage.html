@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* localStorage.setItem("name", "dev"); //set item
+      localStorage.setItem("name2", "devashish");
+      let lolo = localStorage.getItem("name2"); //retrive item
+      //console.log(lolo);
+      localStorage.removeItem("name");*/
+      let imp = ["bindi", "adarak", "mango"];
+      localStorage.setItem("sabzi", JSON.stringify(imp));
+      let a = JSON.parse(localStorage.getItem("sabzi"));
+      console.log(a);
+    </script>
+  </body>
+</html>

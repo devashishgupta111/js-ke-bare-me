@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="con">
+      <h1 id="heads">headinggdd</h1>
+      <div class="item" id="head">child1</div>
+      <div class="item">child2</div>
+      <div class="item">child3</div>
+      <div class="item">chiild4</div>
+      <form action="none.html" methods="posts">
+        <a href="googlw">gooel</a><br />
+        enter name <input type="text" /><br />
+        <input type="button" value="submit" />
+      </form>
+    </div>
+    <script>
+      /* let ele = document.getElementById("head");
+      //ele = ele.className;
+      //ele = ele.childNodes;
+      //ele = ele.parentNode;
+      ele.style.color = "yellow";
+      ele.innerHTML = "<b>dev bhaiya kamal</b>";
+      console.log(ele);*/
+      /*let sel = document.querySelector("#head");
+      sel = document.querySelector(".item");
+      sel = document.querySelector("div");
+      sel = document.querySelector("h1");
+      sel.style.color = "blue";
+      console.log(sel);*/
+      //-----------------------------------
+      let sal = document.getElementsByClassName("con");
+      console.log(sal[0].getElementsByClassName("item"));
+      sal = document.getElementsByTagName("div");
+      Array.from(sal).forEach((element) => {
+        //sare div ko colort kr dega
+        console.log(element);
+        element.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* let obj = {
+        name: "harrry",
+        age: 22,
+        channel: "harrybhai",
+      };*/
+      function obj(givename) {
+        this.name = givename;
+      }
+      obj.prototype.getName = function () {
+        return this.name;
+      };
+      obj.prototype.setname = function (newname) {
+        this.name = newname;
+      };
+      let obj2 = new obj("hardcdry");
+      console.log(obj2);
+    </script>
+  </body>
+</html>
